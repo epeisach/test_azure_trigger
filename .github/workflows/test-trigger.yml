@@ -18,5 +18,5 @@ jobs:
           uses: Azure/pipelines@v1
           with:
             azure-devops-project-url: https://dev.azure.com/epeisach/epeisach
-            azure-pipeline-name: 'test_azure_pipeline'
+            azure-pipeline-name: 'epeisach.test_azure_pipeline'
             azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
