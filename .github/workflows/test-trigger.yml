@@ -19,4 +19,4 @@ jobs:
             azure-devops-project-url: https://dev.azure.com/epeisach/epeisach
             azure-pipeline-name: 'epeisach.test_azure_pipeline'
             azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
-            azure-pipeline-variables: '{"git_repo": "${{github.repository}}", "git_branch": "${{github.base_ref}}"}'
+            azure-pipeline-variables: '{"git_repo": "${{github.repository}}", "git_branch": "${{GITHUB_REF_NAME}}"}'
