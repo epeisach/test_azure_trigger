@@ -5,9 +5,8 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches: 
-      - main
+      - develop
+      - master
 
 jobs:
     build:
@@ -20,3 +19,4 @@ jobs:
             azure-devops-project-url: https://dev.azure.com/epeisach/epeisach
             azure-pipeline-name: 'epeisach.test_azure_pipeline'
             azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
+            azure-pipeline-variables: '{"git_repo": ${{github.repository}} }'
